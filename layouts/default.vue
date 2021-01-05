@@ -1,12 +1,20 @@
 <template>
   <div>
+    <Navbar />
     <Nuxt />
   </div>
 </template>
-
+<script>
+import Navbar from "~/components/Navbar/Navbar.vue";
+export default {
+  components: {
+    Navbar
+  }
+};
+</script>
 <style>
 html {
-  font-family:
+  /* font-family:
     'Source Sans Pro',
     -apple-system,
     BlinkMacSystemFont,
@@ -14,7 +22,7 @@ html {
     Roboto,
     'Helvetica Neue',
     Arial,
-    sans-serif;
+    sans-serif; */
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -31,32 +39,7 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+:root {
+  --main-green: #6c9001;
 }
 </style>
